@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: black;
+}
+
+.block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px;
+}
+
+h1 {
+    font-size: 40px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.input {
+    max-width: 250px;
+    width: 100%;
+    padding: 5px 12px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    background: rgb(37, 77, 37);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 250px;
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: 22px;
+    border-radius: 30px;
+}
+
+h2 {
+    color: white;
+    font-size: 22px;
+    margin-top: 30px;
+}
+
+.box {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(25, 24, 24);
+    margin-top: 30px;
+    margin-bottom: 100px;
+    position: relative;
+    box-shadow: 0 0 20px 0 purple;
+}
+
+.time {
+    color: #fff;
+}
+
+.time.attention {
+    color: red;
+}
+
+.ball {
+    position: absolute;
+}
+
+.ball.close {
+    clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
+.ball.cross {
+    clip-path: polygon(10% 25%, 35% 25%, 35% 0%, 65% 0%, 65% 25%, 90% 25%, 90% 50%, 65% 50%, 65% 100%, 35% 100%, 35% 50%, 10% 50%);
+}
+
+.ball.custom {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.ball.frame {
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+
+.ball.decagon {
+    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
+}
+
+.block.shake {
+    animation: shake-hard 1s infinite;
+}
+
+@media(max-width: 566px){
+    h1{
+        width: 108%;
+        font-size: 28px;
+    }
+
+    .result{
+        width: 70%;
+    }
+
+}
+
+
+@media(max-width: 456px){
+    h1{
+        width: 122%;
+        font-size: 23px;
+    }
+
+    
+    .result{
+        width: 70%;
+    }
+
+    h2{
+        font-size: 21px;
+        width: 103%;
+    }
+
+    .box{
+        
+    width: 230%;
+    height: 209px;
+
+    }
+    .input{
+        width: 137%;
+    }
+
+} 
+
+
+@media(max-width: 472px){
+    h1{
+        width: 122%;
+    }    
+
+    .box{
+        width: 230%;
+        height: 209px;   
+    }
+}
+
+@media(max-width: 432px){
+    h1{
+        width: 136%;
+    }    
+
+    .box{
+        width: 230%;
+        height: 209px;   
+    }
+}
+
+@media(max-width: 414px){
+    h1{
+        width: 175%;
+    }    
+
+    .input{
+        width: 183%;
+    }
+
+    .btn{
+        width: 205%;
+    }
+
+    h2{
+        width: 148%;
+    }
+
+    
+    .result{
+        font-size: 18px;
+        width: 70%;
+    }
+
+    .box{
+        width: 335%;
+    height: 262px;   
+    }
+}
+
+
+@media(max-width: 390px){
+    h1{
+        width: 319%;
+    }    
+
+    
+    .result{
+        font-size: 16;
+        width: 70%;
+    }
+    .input{
+        width: 3001%;
+    }
+
+    h2{
+        width: 320%;
+    }
+
+    .box{
+        width: 341%;
+        height: 209px;   
+    }
+}
+
+
+@media(max-width: 320px){
+    h1{
+        
+        font-size: 34px;
+        width: 1135%;
+    }
+
+    h2{
+        font-size: 19px;
+    width: 683%;
+    }
+
+    .input{
+        width: 762%;
+    }
+
+    .box{
+        
+    width: 1184%;
+    height: 209px;
+
+    }
+
+    .btn{
+        width: 502%;
+    }
+}
+
+@media(max-width: 328px){
+    h1{
+        width: 609%;
+    }
+}
+
+@media(max-width: 349px){
+    h1{
+        width: 405%;
+    }
+
+    .input{
+        width: 396%;
+    }
+
+    h2{
+        width: 353%;
+    }
+
+    .btn{
+        width: 353%;
+    }
+
+    .box{
+        width: 525%;
+    }
+}
+
+@media(max-width: 337px){
+    h1{
+        width: 473%;
+    }
+
+    .input{
+        width: 475%;
+    }
+
+    h2{
+        width: 420%;
+    }
+
+    .btn{
+        width: 353%;
+    }
+
+    .box{
+        width: 525%;
+    }
+}
+
+@media(max-width: 332px){
+    h1{
+        width: 573%;
+    }
+
+    .input{
+        width: 575%;
+    }
+
+    h2{
+        width: 555%;
+    }
+
+    .btn{
+        width: 353%;
+    }
+
+    .box{
+        width: 725%;
+    }
+}
+
+
+@media(max-width: 326px){
+    h1{
+        width: 673%;
+    }
+
+    .input{
+        width: 675%;
+    }
+
+    h2{
+        width: 655%;
+    }
+
+    .btn{
+        width: 353%;
+    }
+
+    .box{
+        width: 725%;
+    }
+}
+
+
+@media(max-width: 322px){
+    h1{
+        width: 773%;
+    }
+
+    .input{
+        width: 775%;
+    }
+
+
+
+    h2{
+        width: 755%;
+    }
+
+    .btn{
+        width: 353%;
+    }
+
+    .box{
+        width: 925%;
+    }
+}
